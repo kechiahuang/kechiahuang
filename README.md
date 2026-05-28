@@ -54,7 +54,7 @@
 - 思考如何透過 AI 降低使用者規劃旅遊行程的時間成本
 
 #### 成品展示
-<img src="assets/AI_penghu_guide_line.PNG" alt="澎湖 AI 導遊專題海報" width="250">
+<img src="AI_penghu_guide_line.PNG" alt="澎湖 AI 導遊專題海報" width="250">
 
 ### 寶工科學玩具
 
