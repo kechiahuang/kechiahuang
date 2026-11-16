@@ -50,41 +50,28 @@
 - 負責電鑽生產線上的指定組裝工序，在嚴格的生產節拍（Takt Time）限制下，依照標準化作業流程執行組裝工作，並遵循嚴格的品質保證與品質管制（QA/QC）標準，以維持目標良率。
 ---
 ## 專案經歷
-### 小型 Transformer 是否也會學到 Factored Representations？
-- 專案類型：AI / Machine Learning / Transformer 研究實作
-- 專案連結：[Transformer研究](https://github.com/kechiahuang/factored)
-- 專案介紹
+### 研究專題學生｜小型 Transformer 能否學習因子化表徵？
 
-生成式語言模型最基本的訓練原理是 next-token prediction，也就是在給定前文脈絡的情況下，讓模型學習預測下一個 token。過去研究指出，Transformer 可能不只是單純記憶 token 層級的模式，而是能夠分解輸入資料背後的潛在生成因子，並將不同因子表示在近似正交的子空間中。然而，原始研究使用的是相對完整的 Transformer 架構。因此，本專案希望探討：較小型且簡化的 Transformer 模型，是否仍然能展現類似的 factored representations。
-根據結果顯示，在訓練過程中，hidden states 的有效維度會逐漸下降，並趨近於與 factored representations 相符的低維結構。此外，個別潛在因子的資訊也能從 hidden states 中被線性恢復，這表示即使是較小型且簡化的 Transformer，也可能透過 next-token prediction 學習到資料背後的潛在因子結構。
+### Can a Small Transformer Learn Factored Representations?
+- 國立政治大學｜2026 年 2 月－2026 年 6 月
+- 指導教授：蔡炎龍教授（Prof. Yen-Lung Tsai）
 
+- 研究小型 Transformer 是否能從五個獨立潛在因子所生成的合成序列資料中，學習低維度的因子化表徵（Factored Representations）。
+- 設計並訓練小型 Transformer 模型，使用以主成分分析（PCA）為基礎的有效維度衡量、線性探測（Linear Probing）、因子幾何視覺化（Factor Geometry Visualization）及單一因子變動分析（Vary-One Analysis），評估模型隱藏狀態所學習到的表徵。
+- 透過調整模型訓練設定改善學習結果，將有效維度從約 30 降低至 10，並取得進一步支持模型已學習到因子化結構的證據。
 
-#### 主要內容
-
-- 使用 Python 與 PyTorch 建立小型 Transformer language model
-- 設計由多個 latent factors 組成的合成資料生成流程
-- 訓練模型預測序列中的下一個 token
-- 分析 hidden state 的有效維度變化
-- 使用 PCA 視覺化不同 factor 在模型表示空間中的結構
 
 
 <sub>────────────────────────────────────────</sub>
 
-### AI 小當家｜生成式 AI 食譜推薦系統
+### 捷運站周邊 YouBike 租借需求分析
 
-* 專案類型：Generative AI / API / Prompt Engineering
-* 專案連結：[AI小當家](https://github.com/kechiahuang/Aichef)
+## YouBike Demand Analysis Around MRT Stations
+* 國立政治大學｜2026 年 2 月－2026 年 6 月
 
-本專案是一個結合生成式 AI 與食譜推薦的應用系統。使用者可以輸入自己的需求、心情或想使用的食材，系統會透過 AI 分析使用者狀態，並即時生成適合的菜餚與食譜。
-在專案中，我設計 system prompt 讓模型能根據使用者情緒推薦相對應的食材，並使用 JSON 將生成結果結構化，方便後續轉換為 Python 物件進行處理。同時，我也加入狀態記錄機制，避免模型重複推薦相同菜名，讓使用者能獲得更多元的料理建議。
+-使用 R 建立完整的計量經濟分析流程，整合高頻率 YouBike 租借紀錄、氣象觀測資料，以及各站點與大眾運輸設施的距離指標。
+-評估多種迴歸模型，發現降雨量會顯著降低 YouBike 使用量，而時間變化模式及站點特徵，也是解釋不同站點租借需求差異的重要因素。
 
-#### 主要內容
-
-* 串接 API 生成菜餚與食譜內容
-* 設計 system prompt，讓 AI 分析使用者情緒並推薦食材
-* 使用 JSON 結構化 AI 回傳資訊
-* 將 JSON 轉換為 Python 物件，提升資料處理穩定性
-* 建立狀態記錄機制，避免重複推薦相同菜名
 
 ---
 
